@@ -17,5 +17,22 @@ jobs:
 
             - name: list files
               run: ls -l
-            
-            
+    
+    job-2:
+        runs-on: ubuntu-latest
+        steps: 
+            - name: log hello world
+              run: echo "Hello, world!"
+
+            - name: list files
+              run: ls -l
+
+    
+    job-3:
+        runs-on: ubuntu-latest
+        steps: 
+            - name: make directory
+              run: mkdir session5
+
+            - name: list files
+              run: ls -l        
