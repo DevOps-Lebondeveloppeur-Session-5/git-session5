@@ -11,3 +11,11 @@ jobs:
         steps: 
             - name: log hello world
               run: echo "Hello, world!"
+            
+            - name: git clone 
+              uses: actions/checkout@v2
+
+            - name: list files
+              run: ls -l
+            
+            
