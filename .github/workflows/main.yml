@@ -1,1 +1,13 @@
-.
+name: Workflow1
+
+on:
+    push:
+        branches:
+            - main
+
+jobs:
+    job-1:
+        runs-on: ubuntu-latest
+        steps: 
+            - name: log hello world
+              run: echo "Hello, world!"
