@@ -38,3 +38,33 @@ jobs:
 
             - name: list files
               run: ls -l        
+    
+    job-4:
+        runs-on: ubuntu-latest
+        needs: job-2
+        steps: 
+            - name: make directory
+              run: mkdir session5
+
+            - name: list files
+              run: ls -l        
+
+    job-5:
+        runs-on: ubuntu-latest
+        needs: job-3
+        steps: 
+            - name: make directory
+              run: mkdir session5
+
+            - name: list files
+              run: ls -l        
+    
+    job-6:
+        runs-on: ubuntu-latest
+        needs: job-4
+        steps: 
+            - name: make directory
+              run: mkdir session5
+
+            - name: list files
+              run: ls -l
